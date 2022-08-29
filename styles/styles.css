@@ -1,12 +1,16 @@
 :root {
-  --main-color: #ffffff;
-  --main-color-2: #ffffff;
-  --text-color: #ffffff;
-  --text-lighter-color: #ffffff;
+  --main-color: #c4a6a6;
+  --main-color-2: #f5ccc3;
+  --text-color: #6d5d5d;
+  --text-lighter-color: #f6f6f6;
+  --black: #000000;
+  --white: #ffffff;
   --basic-font: "Raleway", sans-serif;
-  --h1-font-size:
-  --h4-font-size:
-  --basic-font-size: ;
+  --h1-font-size: 40px;
+  --h2-font-size: 16px;
+  --h3-font-size: 24px;
+  --basic-font-size: 12px;
+  --box-shadow: 6px 6px 12px #6d5d5d;
 }
 
 * {
@@ -16,11 +20,82 @@
   text-decoration: none;
 }
 
+.navigation {
+  border-top: 0.5px solid var(--text-lighter-color);
+  border-bottom: 0.5px solid var(--text-lighter-color);
+  padding: 12px 0px;
+}
+.navigation .links {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
 body {
   background-image: url(../img/bg-img.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 body .content-container {
   margin: 24px 120px;
   background-color: var(--main-color);
+  padding: 24px;
+}
+
+.main-title {
+  font-family: var(--basic-font);
+  font-size: var(--h1-font-size);
+  font-weight: 700;
+  margin: 12px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--basic-font);
+  font-size: var(--h2-font-size);
+  font-weight: 300;
+  color: var(--text-color);
+  margin: 6px 0px;
+}
+
+h3 {
+  font-family: var(--basic-font);
+  font-size: var(--h3-font-size);
+  margin: 12px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+h4 {
+  font-family: var(--basic-font);
+  font-size: var(--basic-font-size);
+  color: var(--text-color);
+  text-align: center;
+}
+
+p {
+  font-family: var(--basic-font);
+  font-size: var(--basic-font-size);
+  color: var(--text-lighter-color);
+  background-color: rgba(109, 93, 93, 0.2);
+}
+
+.photos-container {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.photos-container img {
+  width: 150px;
+  height: 150px;
+  margin: 12px;
+  border-radius: 12px;
+  border: 3px solid var(--main-color-2);
+  border-bottom: 6px solid var(--black);
+  border-top: 6px solid var(--black);
+  box-shadow: var(--box-shadow);
 }/*# sourceMappingURL=styles.css.map */
