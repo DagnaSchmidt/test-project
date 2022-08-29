@@ -1,0 +1,36 @@
+//variables// 
+:root{
+    
+    //COLORS// 
+    --main-color: #ffffff;
+    --main-color-2: #ffffff;
+    --text-color: #ffffff;
+    --text-lighter-color: #ffffff;
+
+    //FONTS//  
+    --basic-font: 'Raleway', sans-serif;
+
+    //FONT SIZES// 
+    --h1-font-size: 
+    --h4-font-size: 
+    --basic-font-size: 
+}
+
+//base//
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+//others// 
+body {
+    background-image: url(../img/bg-img.jpg);
+    background-repeat: no-repeat;
+    .content-container {
+        margin: 24px 120px;
+        background-color: var(--main-color);
+    }
+}
